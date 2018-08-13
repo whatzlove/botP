@@ -36,6 +36,10 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='0080946'))
+    elif event.message.text == "parinya.kh":
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text='0081681'))   
 
 
 if __name__ == "__main__":
