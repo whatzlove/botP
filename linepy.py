@@ -35,7 +35,7 @@ def handle_message(event):
     if event.message.text == "nontawat.r":
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text=event."0080946"))
+            TextSendMessage(text='0080946'))
 
 
 if __name__ == "__main__":
