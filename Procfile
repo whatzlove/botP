@@ -1,1 +1,1 @@
-web: gunicorn bot:app --log-file
+web: gunicorn linebot:app --log-file
