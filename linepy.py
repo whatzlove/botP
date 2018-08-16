@@ -55,37 +55,37 @@ def handle_message(event):
     elif (event.message.text == "uninstall trend micro") or (event.message.text == "Uninstall trend micro"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='content2')) 
+            TextSendMessage(text='http://www.mediafire.com/file/b8j1oegd6e25b73/Trend_Micro_Server_Protect_Uninstall_Manual.pdf/file')) 
 			
     elif (event.message.text == "install symantec") or (event.message.text == "Install symantec"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='content3'))  
+            TextSendMessage(text='http://www.mediafire.com/file/bxx2npxsoks5voi/Symantec_Endpoint_Protection_Install_Manual_for_WinXP-7.pdf/file'))  
 
     elif (event.message.text == "uninstall symantec") or (event.message.text == "Uninstall symantec"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='content4'))  
+            TextSendMessage(text='http://www.mediafire.com/file/7hhpt6ujfpbwhaz/Symantec_Endpoint_Protection_Uninstall_Manual_for_WinXP-7.pdf/file'))  
 			
     elif (event.message.text == "install vse8.8") or (event.message.text == "Install vse8.8"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='content5'))  
+            TextSendMessage(text='http://www.mediafire.com/file/jrbv2bkjf187dbm/McAfee_VirusScan_Enterprise8.8_Install_Manual_for_WinXP.pdf/file'))  
 			
     elif (event.message.text == "uninstall vse8.8") or (event.message.text == "Uninstall vse8.8"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='content6')) 
+            TextSendMessage(text='http://www.mediafire.com/file/s6ha4ovai2vvscx/McAfee_VirusScan_Enterprise8.8_Uninstall_Manual_for_WinXP.pdf/file')) 
 			
     elif (event.message.text == "install ens10") or (event.message.text == "Install ens10"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='content7')) 
+            TextSendMessage(text='http://www.mediafire.com/file/fdbq3d3wwkby9tt/McAfee_Endpoint_Security_Install_Manual_for_Win_7.pdf/file')) 
 			
     elif (event.message.text == "uninstall ens10") or (event.message.text == "Uninstall ens10"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='content8')) 
+            TextSendMessage(text='http://www.mediafire.com/file/ohb1h1e9g3jfbm5/McAfee_Endpoint_Security_Uninstall_Manual_for_Win_7.pdf/file')) 
 			
     else:
         line_bot_api.reply_message(
