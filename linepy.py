@@ -37,7 +37,7 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text='Please type "install" "uninstall"'))
 			
-    elif (event.message.text == ("install" or "Install")):
+    elif (event.message.text == "install") or (event.message.text == "Install"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='please chose product "install trend micro" "install symantec" "install vse8.8" "install ens10"'))  
