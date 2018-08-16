@@ -50,7 +50,7 @@ def handle_message(event):
     elif event.message.text == "install trend micro":
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='content1')) 
+            TextSendMessage(text='http://www.mediafire.com/file/6ycymsztz9k0l44/Trend_Micro_Server_Protect_Install_Manual.pdf/file')) 
 			
     elif event.message.text == "uninstall trend micro":
         line_bot_api.reply_message(
