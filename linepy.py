@@ -32,7 +32,7 @@ def webhook():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    if event.message.text == "menu":
+    if (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='Please type "install" "uninstall"'))
@@ -42,47 +42,47 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text='please chose product "install trend micro" "install symantec" "install vse8.8" "install ens10"'))  
     
-    elif event.message.text == "uninstall":
+    elif (event.message.text == "uninstall") or (event.message.text == "Uninstall"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='please chose product "uninstall trend micro" "uninstall symantec" "uninstall vse8.8" "uninstall ens10"')) 
 			
-    elif event.message.text == "install trend micro":
+    elif (event.message.text == "install trend micro") or (event.message.text == "Install trend micro"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='http://www.mediafire.com/file/6ycymsztz9k0l44/Trend_Micro_Server_Protect_Install_Manual.pdf/file')) 
 			
-    elif event.message.text == "uninstall trend micro":
+    elif (event.message.text == "uninstall trend micro") or (event.message.text == "Uninstall trend micro"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='content2')) 
 			
-    elif event.message.text == "install symantec":
+    elif (event.message.text == "install symantec") or (event.message.text == "Install symantec"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='content3'))  
 
-    elif event.message.text == "uninstall symantec":
+    elif (event.message.text == "uninstall symantec") or (event.message.text == "Uninstall symantec"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='content4'))  
 			
-    elif event.message.text == "install vse8.8":
+    elif (event.message.text == "install vse8.8") or (event.message.text == "Install vse8.8"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='content5'))  
 			
-    elif event.message.text == "uninstall vse8.8":
+    elif (event.message.text == "uninstall vse8.8") or (event.message.text == "Uninstall vse8.8"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='content6')) 
 			
-    elif event.message.text == "install ens10":
+    elif (event.message.text == "install ens10") or (event.message.text == "Install ens10"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='content7')) 
 			
-    elif event.message.text == "uninstall ens10":
+    elif (event.message.text == "uninstall ens10") or (event.message.text == "Uninstall ens10"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='content8')) 
