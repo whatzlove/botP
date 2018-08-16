@@ -87,7 +87,8 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text='content8')) 
 			
-    else line_bot_api.reply_message(
+    else:
+	line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='dont understand please type "menu"'))   
 			
