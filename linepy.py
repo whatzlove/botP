@@ -41,13 +41,13 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='please chose product "install trend micro" "install symantec" "install vse8.8" "install ens10"'))  
-			
-	elif event.message.text == "uninstall":
+    
+    elif event.message.text == "uninstall":
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='please chose product "uninstall trend micro" "uninstall symantec" "uninstall vse8.8" "uninstall ens10"')) 
 			
-	elif event.message.text == "install trend micro":
+    elif event.message.text == "install trend micro":
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='content1')) 
