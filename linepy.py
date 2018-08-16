@@ -35,17 +35,17 @@ def handle_message(event):
     if (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Please type "install" "uninstall"'))
+            TextSendMessage(text='Please type "install" \n "uninstall"'))
 			
     elif (event.message.text == "install") or (event.message.text == "Install"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='please chose product "install trend micro" "install symantec" "install vse8.8" "install ens10"'))  
+            TextSendMessage(text='please chose product "install trend micro" \n "install symantec" \n "install vse8.8" \n "install ens10"'))  
     
     elif (event.message.text == "uninstall") or (event.message.text == "Uninstall"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='please chose product "uninstall trend micro" "uninstall symantec" "uninstall vse8.8" "uninstall ens10"')) 
+            TextSendMessage(text='please chose product "uninstall trend micro" \n "uninstall symantec" \n "uninstall vse8.8" \n "uninstall ens10"')) 
 			
     elif (event.message.text == "install trend micro") or (event.message.text == "Install trend micro"):
         line_bot_api.reply_message(
