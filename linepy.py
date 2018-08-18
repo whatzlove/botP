@@ -32,7 +32,13 @@ def webhook():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    if (event.message.text == "menu") or (event.message.text == "Menu"):
+	textinput = event.message.text.split()
+	if (textinput[0] == "usb") or (textinput[0] == "Usb")
+		line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text='USB Test'))
+			
+    elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='Please type \n "install" \n "uninstall"'))
