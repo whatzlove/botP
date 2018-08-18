@@ -40,7 +40,7 @@ def handle_message(event):
  #           event.reply_token,
   #          TextSendMessage(text='USB TEST'))
         usbcheck.usbc(inputarr[1])
-	line_bot_api.reply_message(
+        line_bot_api.reply_message(
 	    event.reply_token,
             TextSendMessage(result))	
 	
