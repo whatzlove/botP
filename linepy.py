@@ -39,11 +39,12 @@ def handle_message(event):
 #        line_bot_api.reply_message(
  #           event.reply_token,
   #          TextSendMessage(text='USB TEST'))
-        usbusername = inputarr[1]
+    #      usbusername = inputarr[1]
+	usbresult = usbc(inputarr[1])
         usbc(usbusername)
         line_bot_api.reply_message(
             event.reply_token,
-	    TextSendMessage(result))	
+	    TextSendMessage(usbresult))	
 	
     elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
