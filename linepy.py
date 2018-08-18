@@ -49,7 +49,7 @@ def handle_message(event):
     elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Please type \n "install" \n "uninstall"'))
+            TextSendMessage(text='Please type \n "install" \n "uninstall" \n ต้องการทราบสิทธิในการใช้ USB พิมพ์ USB เว้นวรรคแล้วตามด้วยชื่อผู้ใช้งาน เช่น abc.d'))
 			
     elif (event.message.text == "install") or (event.message.text == "Install"):
         line_bot_api.reply_message(
