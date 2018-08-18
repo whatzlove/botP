@@ -11,7 +11,7 @@ def usbc(n):
 #            print('j = ',j)
             j = LastArray
             stop = 1
-	    result='Use USB and CD-ROM'
+            result='Use USB and CD-ROM'
         else:
             j += 1
     if stop == 0 :
