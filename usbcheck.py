@@ -4,9 +4,8 @@ def usbc(n):
     file = open('ListUseUSB.txt')
     for word in file:
         name = word.split('	')
-	LastArray =  len(name) - 1
-	
-	while j <= LastArray:
+        LastArray =  len(name) - 1
+    while j <= LastArray:
         if n == name[j]:
 #            print('Use USB and CD-ROM')
 #            print('j = ',j)
