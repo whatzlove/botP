@@ -41,8 +41,8 @@ def handle_message(event):
   #          TextSendMessage(text='USB TEST'))
         usbcheck.usbc(inputarr[1])
         line_bot_api.reply_message(
-	    event.reply_token,
-            TextSendMessage(result))	
+            event.reply_token,
+	    TextSendMessage(result))	
 	
     elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
