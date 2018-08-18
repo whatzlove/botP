@@ -3,7 +3,7 @@ def usbc(n):
     j = 0
     file = open('ListUseUSB.txt')
     for word in file:
-	name = word.split('	')
+        name = word.split('	')
 	LastArray =  len(name) - 1
 	
 	while j <= LastArray:
