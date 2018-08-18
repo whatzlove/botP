@@ -43,7 +43,7 @@ def handle_message(event):
         usbc(usbusername)
         line_bot_api.reply_message(
             event.reply_token,
-	    TextSendMessage(text=result))	
+	    TextSendMessage(result))	
 	
     elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
