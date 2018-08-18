@@ -2,7 +2,7 @@ from flask import Flask, request, abort
 from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import (MessageEvent, TextMessage, TextSendMessage,)
-import arbiter
+
 app = Flask(__name__)
 
 line_bot_api = LineBotApi('1WpfHfGGfcQ1fxfaEXVP4vx1IfhiUY6fZ/fXVERnTlYx3zaFklj8aECTNrU1D4iy3+MebJXlGYSuLU/93oJn4NNCN9GsSv9invPyphDycXQvzr2lHNUxWeqUBvK/MxJULr3XLGDH6BhHrjgaTinVMwdB04t89/1O/w1cDnyilFU=')
@@ -33,10 +33,10 @@ def webhook():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     textinput = event.message.text.split(' ')
-    if (textinput[0] == "usb") or (textinput[0] == "Usb")
+    if (event.message.text == "usb test")
 	line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='USB Test'))
+            TextSendMessage(textinput[0])
 			
     elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
