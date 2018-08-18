@@ -32,11 +32,12 @@ def webhook():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    textinput = event.message.text.split(' ')
+    textinput = event.message.text
+    inputarr = textinput.split(' ')
     if (event.message.text == "usb test")
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(textinput[0])
+            TextSendMessage(inputarr[0])
     elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
