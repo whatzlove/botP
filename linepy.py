@@ -100,7 +100,15 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='http://www.mediafire.com/file/ohb1h1e9g3jfbm5/McAfee_Endpoint_Security_Uninstall_Manual_for_Win_7.pdf/file')) 
-			
+
+    elif (event.message.text == "pic"):
+	image_message = imageSendMessage(
+            original_content_url=https://github.com/whatzlove/botP/blob/master/resource/pic/280528.jpg,
+            preview_image_url=https://github.com/whatzlove/botP/blob/master/resource/pic/280528.jpg)
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+					
     else:
         line_bot_api.reply_message(
             event.reply_token,
