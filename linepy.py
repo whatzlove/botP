@@ -103,8 +103,8 @@ def handle_message(event):
 
     elif (event.message.text == "pic"):
         image_message = imageSendMessage(
-            original_content_url=https://github.com/whatzlove/botP/blob/master/resource/pic/280528.jpg,
-            preview_image_url=https://github.com/whatzlove/botP/blob/master/resource/pic/280528.jpg)
+            original_content_url='https://github.com/whatzlove/botP/blob/master/resource/pic/280528.jpg',
+            preview_image_url='https://github.com/whatzlove/botP/blob/master/resource/pic/280528.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
