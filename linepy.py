@@ -101,10 +101,10 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text='http://www.mediafire.com/file/ohb1h1e9g3jfbm5/McAfee_Endpoint_Security_Uninstall_Manual_for_Win_7.pdf/file')) 
 
-    elif (event.message.text == "pic"):
+    elif (event.message.text == "ข้าวเที่ยง"):
         image_message = ImageSendMessage(
-            original_content_url='https://github.com/whatzlove/botP/blob/master/resource/pic/280528.jpg',
-            preview_image_url='https://github.com/whatzlove/botP/blob/master/resource/pic/280528.jpg')
+            original_content_url='https://www.img.in.th/image/57Lv92',
+            preview_image_url='https://www.img.in.th/image/57Lv92')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
