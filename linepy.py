@@ -103,7 +103,7 @@ def handle_message(event):
 
     elif (event.message.text == "ข้าวเที่ยง"):
         image_message = ImageSendMessage(
-            original_content_url='https://i.imgur.com/AbtdRKe.jpg',
+            original_content_url='https://photos.app.goo.gl/s8vnq4Ky9JhMefZL7',
 	    preview_image_url='https://i.imgur.com/jvlVe9Q.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
