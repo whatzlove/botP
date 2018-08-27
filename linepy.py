@@ -54,7 +54,7 @@ def handle_message(event):
     if result == 1:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(name[0]))
+            TextSendMessage(text='Use USB and CD-ROM'))
 			
  #   if (inputarr[0] == "usb") or (inputarr[0] == "Usb"):
 #        line_bot_api.reply_message(
