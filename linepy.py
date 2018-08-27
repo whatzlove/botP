@@ -45,13 +45,13 @@ def handle_message(event):
         if inputarr[0] == name[j]:
             j = LastArray
             stop = 1
-            result = 'Use USB and CD-ROM'
+            result = 1
         else:
             j += 1
     if stop == 0 :
-        result = 'Block USB and CD-ROM'
+        result = 0
   #  return result
-    if (result == "Use USB and CD-ROM"):
+    if (result == 1):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='Use USB and CD-ROM'))
