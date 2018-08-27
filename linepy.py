@@ -42,7 +42,7 @@ def handle_message(event):
         name = word.split('	')
         LastArray =  len(name) - 1
     while j <= LastArray:
-        if inputarr[0] == name[0]:
+        if inputarr[0] == name[j]:
             j = LastArray
             stop = 1
             result = 1
@@ -54,7 +54,7 @@ def handle_message(event):
     if result == 1:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Use USB and CD-ROM'))
+            TextSendMessage(name[0]))
 			
  #   if (inputarr[0] == "usb") or (inputarr[0] == "Usb"):
 #        line_bot_api.reply_message(
