@@ -50,7 +50,7 @@ def handle_message(event):
             j += 1
     if stop == 0 :
         result = 'Block USB and CD-ROM'
-    return result
+  #  return result
     if (result == "Use USB and CD-ROM")
         line_bot_api.reply_message(
             event.reply_token,
