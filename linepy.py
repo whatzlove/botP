@@ -35,16 +35,37 @@ def webhook():
 def handle_message(event):
     textinput = event.message.text
     inputarr = textinput.split(' ')
-    if (inputarr[0] == "usb") or (inputarr[0] == "Usb"):
+    stop = 0
+    j = 0
+    file = open('ListUseUSB.txt')
+    for word in file:
+        name = word.split('	')
+        LastArray =  len(name) - 1
+    while j <= LastArray:
+        if inputarr[0] == name[j]:
+            j = LastArray
+            stop = 1
+            result = 'Use USB and CD-ROM'
+        else:
+            j += 1
+    if stop == 0 :
+        result = 'Block USB and CD-ROM'
+    return result
+    if (result == "Use USB and CD-ROM")
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text='Use USB and CD-ROM'))
+			
+ #   if (inputarr[0] == "usb") or (inputarr[0] == "Usb"):
 #        line_bot_api.reply_message(
  #           event.reply_token,
   #          TextSendMessage(text='USB TEST'))
     #      usbusername = inputarr[1]
-        usbresult = usbc(inputarr[1])
+  #      usbresult = usbc(inputarr[1])
   #      usbc(usbusername)
-        line_bot_api.reply_message(
-            event.reply_token,
-	    TextSendMessage(usbresult))	
+   #     line_bot_api.reply_message(
+   #         event.reply_token,
+#	    TextSendMessage(usbresult))	
 	
     elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
@@ -112,7 +133,7 @@ def handle_message(event):
     else:
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='dont understand please type "menu"'))   
+            TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
 			
 
 
