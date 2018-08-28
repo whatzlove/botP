@@ -372,12 +372,12 @@ def handle_message(event):
             TextSendMessage(text='hello')) 
 	
     else:
-        if (event.source.group_id == Ca1eed6eefec9ccb0382b34c99b7594a0):
-            exit()	
-        else:
-            line_bot_api.reply_message(
-                event.reply_token,
-                TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
+  #      if (event.source.group_id == Ca1eed6eefec9ccb0382b34c99b7594a0):
+   #         exit()	
+    #    else:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
 			
 
 
