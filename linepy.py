@@ -234,10 +234,78 @@ def handle_message(event):
             TextSendMessage(text='http://www.mediafire.com/file/s6ha4ovai2vvscx/McAfee_VirusScan_Enterprise8.8_Uninstall_Manual_for_WinXP.pdf/file')) 
 			
     elif (event.message.text == "install ens10") or (event.message.text == "Install ens10"):
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='http://www.mediafire.com/file/fdbq3d3wwkby9tt/McAfee_Endpoint_Security_Install_Manual_for_Win_7.pdf/file')) 
-			
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/WBr1TGj.jpg',
+	    preview_image_url='https://imgur.com/WBr1TGj.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/GvgT8LQ.jpg',
+	    preview_image_url='https://imgur.com/GvgT8LQ.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/utkMSES.jpg',
+	    preview_image_url='https://imgur.com/utkMSES.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/P9F3DVr.jpg',
+	    preview_image_url='https://imgur.com/P9F3DVr.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/UdG5CaW.jpg',
+	    preview_image_url='https://imgur.com/UdG5CaW.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/fJhqnwj.jpg',
+	    preview_image_url='https://imgur.com/fJhqnwj.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/uvhvWDx.jpg',
+	    preview_image_url='https://imgur.com/uvhvWDx.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/wNaFYAM.jpg',
+	    preview_image_url='https://imgur.com/wNaFYAM.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/wAmqVHa.jpg',
+	    preview_image_url='https://imgur.com/wAmqVHa.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/kN87Ybn.jpg',
+	    preview_image_url='https://imgur.com/kN87Ybn.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/U64Y6aa.jpg',
+	    preview_image_url='https://imgur.com/U64Y6aa.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/6K3Z1r9.jpg',
+	    preview_image_url='https://imgur.com/6K3Z1r9.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
     elif (event.message.text == "uninstall ens10") or (event.message.text == "Uninstall ens10"):
         line_bot_api.reply_message(
             event.reply_token,
