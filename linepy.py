@@ -34,6 +34,7 @@ def webhook():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     profile = line_bot_api.get_profile(event.source.user_id)
+    #group = line_bot_api.get_group_member_profile(group_id, user_id)
     textinput = event.message.text
     inputarr = textinput.split(' ')
     stop = 0
@@ -358,7 +359,11 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-					
+	
+    elif (event.message.text == "groupid"):
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(event.source.group_id)) 
     else:
         line_bot_api.reply_message(
             event.reply_token,
