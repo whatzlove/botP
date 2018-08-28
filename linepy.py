@@ -167,11 +167,62 @@ def handle_message(event):
         line_bot_api.push_message(
             profile.user_id,image_message
             )
+	
     elif (event.message.text == "uninstall symantec") or (event.message.text == "Uninstall symantec"):
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='http://www.mediafire.com/file/7hhpt6ujfpbwhaz/Symantec_Endpoint_Protection_Uninstall_Manual_for_WinXP-7.pdf/file'))  
-			
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/ONZGYe5.jpg',
+	    preview_image_url='https://imgur.com/MkHtf99.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/i8YlhT0.jpg',
+	    preview_image_url='https://imgur.com/OSzxIWs.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/RAujq9C.jpg',
+	    preview_image_url='https://imgur.com/RAujq9C.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/J22RJWY.jpg',
+	    preview_image_url='https://imgur.com/J22RJWY.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/siiLhhT.jpg',
+	    preview_image_url='https://imgur.com/siiLhhT.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/jsphX5M.jpg',
+	    preview_image_url='https://imgur.com/jsphX5M.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/4kQn5F7.jpg',
+	    preview_image_url='https://imgur.com/4kQn5F7.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/8IQe6mM.jpg',
+	    preview_image_url='https://imgur.com/8IQe6mM.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/DmvFCIJ.jpg',
+	    preview_image_url='https://imgur.com/DmvFCIJ.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
     elif (event.message.text == "install vse8.8") or (event.message.text == "Install vse8.8"):
         line_bot_api.reply_message(
             event.reply_token,
