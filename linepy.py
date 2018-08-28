@@ -99,11 +99,11 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,image_message
             )
-        image_message2 = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/c92MnU7.jpg',
 	    preview_image_url='https://imgur.com/54x4ero.jpg')
         line_bot_api.reply_message(
-            event.reply_token,image_message2
+            event.reply_token,image_message
             ) 
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/w6Zfdgw.jpg',
