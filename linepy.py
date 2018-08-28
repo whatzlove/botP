@@ -71,7 +71,7 @@ def handle_message(event):
     elif (event.message.text == "menu") or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Please type \n "install" \n "uninstall" \n ต้องการทราบสิทธิในการใช้ USB พิมพ์ USB เว้นวรรคแล้วตามด้วยชื่อผู้ใช้งาน เช่น abc.d'))
+            TextSendMessage(text='Please type \n "install" \n "uninstall" \n ต้องการทราบสิทธิในการใช้ USB พิมพ์ชื่อผู้ใช้งาน เช่น abc.d หรือ computer name หรือ IP'))
 			
     elif (event.message.text == "install") or (event.message.text == "Install"):
         line_bot_api.reply_message(
@@ -306,11 +306,51 @@ def handle_message(event):
         line_bot_api.push_message(
             profile.user_id,image_message
             )
+	
     elif (event.message.text == "uninstall ens10") or (event.message.text == "Uninstall ens10"):
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='http://www.mediafire.com/file/ohb1h1e9g3jfbm5/McAfee_Endpoint_Security_Uninstall_Manual_for_Win_7.pdf/file')) 
-
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/ynsasNL.jpg',
+	    preview_image_url='https://imgur.com/ynsasNL.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/9R09HwZ.jpg',
+	    preview_image_url='https://imgur.com/9R09HwZ.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/OV3qfRx.jpg',
+	    preview_image_url='https://imgur.com/OV3qfRx.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/Mqxq9Pk.jpg',
+	    preview_image_url='https://imgur.com/Mqxq9Pk.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/U2ZBazn.jpg',
+	    preview_image_url='https://imgur.com/U2ZBazn.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/5UvZvjZ.jpg',
+	    preview_image_url='https://imgur.com/5UvZvjZ.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/jUqDyRc.jpg',
+	    preview_image_url='https://imgur.com/jUqDyRc.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+	
     elif (event.message.text == "ข้าวเที่ยง"):
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/4D77SCC.jpg',
