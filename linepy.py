@@ -99,67 +99,67 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,image_message
             )
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/c92MnU7.jpg',
 	    preview_image_url='https://imgur.com/54x4ero.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/w6Zfdgw.jpg',
 	    preview_image_url='https://imgur.com/M0u2HS3.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/lyADnLn.jpg',
 	    preview_image_url='https://imgur.com/LdBek5A.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/v0xUU9P.jpg',
 	    preview_image_url='https://imgur.com/HsMf8a5.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/kCFVwdd.jpg',
 	    preview_image_url='https://imgur.com/Q9DzQiZ.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/BJ8zJAC.jpg',
 	    preview_image_url='https://imgur.com/XYKjunB.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/auT1CVa.jpg',
 	    preview_image_url='https://imgur.com/XYxDUnxB.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/uEQFBHx.jpg',
 	    preview_image_url='https://imgur.com/KqmQucB.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/WvEQLNV.jpg',
 	    preview_image_url='https://imgur.com/7I3fuiQ.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/aXU2brW.jpg',
 	    preview_image_url='https://imgur.com/OWI6viZ.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
             ) 
-	image_message = ImageSendMessage(
+        image_message = ImageSendMessage(
             original_content_url='https://imgur.com/dT2CSmQ.jpg',
 	    preview_image_url='https://imgur.com/B3pFR6A.jpg')
         line_bot_api.reply_message(
