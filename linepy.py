@@ -113,8 +113,8 @@ def handle_message(event):
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https://imgur.com/lyADnLn.jpg',
-	    preview_image_url='https://imgur.com/LdBek5A.jpg')
+            original_content_url='https://imgur.com/LdBek5A.jpg',
+	    preview_image_url='https://imgur.com/lyADnLn.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
