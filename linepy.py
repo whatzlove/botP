@@ -373,7 +373,7 @@ def handle_message(event):
 	
     else:
         if (event.source.group_id == Ca1eed6eefec9ccb0382b34c99b7594a0):
-		
+	    exit()	
         else:
             line_bot_api.reply_message(
                 event.reply_token,
