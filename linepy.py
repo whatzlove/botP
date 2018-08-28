@@ -365,6 +365,12 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(event.source.group_id)) 
+	
+    elif (event.message.text == "test"):
+        line_bot_api.push_message(
+            'Ca1eed6eefec9ccb0382b34c99b7594a0',
+            TextSendMessage(text='hello')) 
+	
     else:
         line_bot_api.reply_message(
             event.reply_token,
