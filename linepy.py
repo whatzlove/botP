@@ -93,10 +93,78 @@ def handle_message(event):
             TextSendMessage(text='http://www.mediafire.com/file/b8j1oegd6e25b73/Trend_Micro_Server_Protect_Uninstall_Manual.pdf/file')) 
 			
     elif (event.message.text == "install symantec") or (event.message.text == "Install symantec"):
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/3ftXd6c.jpg',
+	    preview_image_url='https://imgur.com/Wg4Shju.jpg')
         line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='http://www.mediafire.com/file/bxx2npxsoks5voi/Symantec_Endpoint_Protection_Install_Manual_for_WinXP-7.pdf/file'))  
-
+            event.reply_token,image_message
+            )
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/c92MnU7.jpg',
+	    preview_image_url='https://imgur.com/54x4ero.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/w6Zfdgw.jpg',
+	    preview_image_url='https://imgur.com/M0u2HS3.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/lyADnLn.jpg',
+	    preview_image_url='https://imgur.com/LdBek5A.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/v0xUU9P.jpg',
+	    preview_image_url='https://imgur.com/HsMf8a5.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/kCFVwdd.jpg',
+	    preview_image_url='https://imgur.com/Q9DzQiZ.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/BJ8zJAC.jpg',
+	    preview_image_url='https://imgur.com/XYKjunB.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/auT1CVa.jpg',
+	    preview_image_url='https://imgur.com/XYxDUnxB.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/uEQFBHx.jpg',
+	    preview_image_url='https://imgur.com/KqmQucB.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/WvEQLNV.jpg',
+	    preview_image_url='https://imgur.com/7I3fuiQ.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/aXU2brW.jpg',
+	    preview_image_url='https://imgur.com/OWI6viZ.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
+	image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/dT2CSmQ.jpg',
+	    preview_image_url='https://imgur.com/B3pFR6A.jpg')
+        line_bot_api.reply_message(
+            event.reply_token,image_message
+            ) 
     elif (event.message.text == "uninstall symantec") or (event.message.text == "Uninstall symantec"):
         line_bot_api.reply_message(
             event.reply_token,
