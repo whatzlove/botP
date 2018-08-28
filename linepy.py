@@ -93,11 +93,12 @@ def handle_message(event):
             TextSendMessage(text='http://www.mediafire.com/file/b8j1oegd6e25b73/Trend_Micro_Server_Protect_Uninstall_Manual.pdf/file')) 
 			
     elif (event.message.text == "install symantec") or (event.message.text == "Install symantec"):
+	profile = line_bot_api.get_profile(event.source.user_id)
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/3ftXd6c.jpg',
 	    preview_image_url='https://imgur.com/Wg4Shju.jpg')
         line_bot_api.push_message(
-            user_id,image_message
+            profile.user_id,image_message
             )
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/c92MnU7.jpg',
