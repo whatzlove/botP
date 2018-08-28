@@ -96,8 +96,8 @@ def handle_message(event):
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/3ftXd6c.jpg',
 	    preview_image_url='https://imgur.com/Wg4Shju.jpg')
-        line_bot_api.reply_message(
-            event.reply_token,image_message
+        line_bot_api.push_message(
+            user_id,image_message
             )
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/c92MnU7.jpg',
