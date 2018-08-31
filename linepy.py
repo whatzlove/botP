@@ -37,6 +37,7 @@ def handle_message(event):
     #group_id=Ca1eed6eefec9ccb0382b34c99b7594a0
     #group = line_bot_api.get_group_member_profile(group_id, user_id)
     textinput = event.message.text
+    #inputc = event.message.text.lower()
     inputarr = textinput.split(' ')
     stop = 0
     j = 0
@@ -70,7 +71,7 @@ def handle_message(event):
    #         event.reply_token,
 #	    TextSendMessage(usbresult))	
 	
-    elif (textinput.lower() == "menu") #or (event.message.text == "Menu"):
+    elif (event.message.text.lower() == "menu"):#or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='Please type \n "install" \n "uninstall" \n ต้องการทราบสิทธิในการใช้ USB พิมพ์ชื่อผู้ใช้งาน เช่น abc.d หรือ computer name หรือ IP'))
