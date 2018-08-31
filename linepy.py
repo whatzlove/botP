@@ -37,7 +37,7 @@ def handle_message(event):
     #group_id=Ca1eed6eefec9ccb0382b34c99b7594a0
     #group = line_bot_api.get_group_member_profile(group_id, user_id)
     textinput = event.message.text
-    #inputc = event.message.text.lower()
+    inputc = event.message.text.lower()
     inputarr = textinput.split(' ')
     stop = 0
     j = 0
@@ -71,33 +71,38 @@ def handle_message(event):
    #         event.reply_token,
 #	    TextSendMessage(usbresult))	
 	
-    elif (event.message.text.lower() == "menu"):
+    elif (inputc == "menu"):
 	#or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='Please type \n "install" \n "uninstall" \n ต้องการทราบสิทธิในการใช้ USB พิมพ์ชื่อผู้ใช้งาน เช่น abc.d หรือ computer name หรือ IP'))
 			
-    elif (event.message.text == "install") or (event.message.text == "Install"):
+    elif (inputc == "install"): 
+	#or (event.message.text == "Install"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='please chose product \n "install trend micro" \n "install symantec" \n "install vse8.8" \n "install ens10"'))  
     
-    elif (event.message.text == "uninstall") or (event.message.text == "Uninstall"):
+    elif (inputc == "uninstall"):
+		#or (event.message.text == "Uninstall"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='please chose product \n "uninstall trend micro" \n "uninstall symantec" \n "uninstall vse8.8" \n "uninstall ens10"')) 
 			
-    elif (event.message.text == "install trend micro") or (event.message.text == "Install trend micro"):
+    elif (inputc == "install trend micro"):
+	#or (event.message.text == "Install trend micro"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='http://www.mediafire.com/file/6ycymsztz9k0l44/Trend_Micro_Server_Protect_Install_Manual.pdf/file')) 
 			
-    elif (event.message.text == "uninstall trend micro") or (event.message.text == "Uninstall trend micro"):
+    elif (inputc == "uninstall trend micro"):
+	#or (event.message.text == "Uninstall trend micro"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='http://www.mediafire.com/file/b8j1oegd6e25b73/Trend_Micro_Server_Protect_Uninstall_Manual.pdf/file')) 
 			
-    elif (event.message.text == "install symantec") or (event.message.text == "Install symantec"):
+    elif (inputc == "install symantec"): 
+	#or (event.message.text == "Install symantec"):
       #  profile = line_bot_api.get_profile(event.source.user_id)
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/3ftXd6c.jpg',
@@ -172,7 +177,8 @@ def handle_message(event):
             profile.user_id,image_message
             )
 	
-    elif (event.message.text == "uninstall symantec") or (event.message.text == "Uninstall symantec"):
+    elif (inputc == "uninstall symantec"):
+	#or (event.message.text == "Uninstall symantec"):
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/ONZGYe5.jpg',
 	    preview_image_url='https://imgur.com/MkHtf99.jpg')
@@ -227,17 +233,20 @@ def handle_message(event):
         line_bot_api.push_message(
             profile.user_id,image_message
             )
-    elif (event.message.text == "install vse8.8") or (event.message.text == "Install vse8.8"):
+    elif (inputc == "install vse8.8"):
+	#or (event.message.text == "Install vse8.8"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='http://www.mediafire.com/file/jrbv2bkjf187dbm/McAfee_VirusScan_Enterprise8.8_Install_Manual_for_WinXP.pdf/file'))  
 			
-    elif (event.message.text == "uninstall vse8.8") or (event.message.text == "Uninstall vse8.8"):
+    elif (inputc == "uninstall vse8.8"):
+	#or (event.message.text == "Uninstall vse8.8"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='http://www.mediafire.com/file/s6ha4ovai2vvscx/McAfee_VirusScan_Enterprise8.8_Uninstall_Manual_for_WinXP.pdf/file')) 
 			
-    elif (event.message.text == "install ens10") or (event.message.text == "Install ens10"):
+    elif (inputc == "install ens10"): 
+	#or (event.message.text == "Install ens10"):
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/WBr1TGj.jpg',
 	    preview_image_url='https://imgur.com/WBr1TGj.jpg')
@@ -311,7 +320,8 @@ def handle_message(event):
             profile.user_id,image_message
             )
 	
-    elif (event.message.text == "uninstall ens10") or (event.message.text == "Uninstall ens10"):
+    elif (inputc == "uninstall ens10"):
+	#or (event.message.text == "Uninstall ens10"):
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/ynsasNL.jpg',
 	    preview_image_url='https://imgur.com/ynsasNL.jpg')
@@ -363,12 +373,12 @@ def handle_message(event):
             event.reply_token,image_message
             ) 
 	
-    elif (event.message.text == "groupid"):
+    elif (inputc == "groupid"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(event.source.group_id)) 
 	
-    elif (event.message.text == "test"):
+    elif (inputc == "test"):
         line_bot_api.push_message(
             'Ca1eed6eefec9ccb0382b34c99b7594a0',
             TextSendMessage(text='hello')) 
