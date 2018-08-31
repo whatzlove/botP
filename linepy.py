@@ -70,7 +70,7 @@ def handle_message(event):
    #         event.reply_token,
 #	    TextSendMessage(usbresult))	
 	
-    elif (event.message.text.lower() == "menu") #or (event.message.text == "Menu"):
+    elif (textinput.lower() == "menu") #or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='Please type \n "install" \n "uninstall" \n ต้องการทราบสิทธิในการใช้ USB พิมพ์ชื่อผู้ใช้งาน เช่น abc.d หรือ computer name หรือ IP'))
