@@ -380,7 +380,7 @@ def handle_message(event):
             TextSendMessage(event.source.group_id)) 
 	
     elif (inputarr[0].lower() == "de"):
-        DEmsg = inputarr[1].upper() + '\n' + inputarr[2] + '\n' + inputarr[3]
+        DEmsg = inputarr[1].upper() + '\n' + inputarr[2] + '\n' + inputarr[3] + '\n' + inputarr[4]
 	#+'\n' inputarr[4]
         line_bot_api.push_message(
             'Ua6751e3b8340b1b849c4826ad27ddcdd',
