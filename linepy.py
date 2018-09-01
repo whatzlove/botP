@@ -389,7 +389,7 @@ def handle_message(event):
         msg = DEmsg + '\n' + logtxt
         line_bot_api.push_message(
             'Ua6751e3b8340b1b849c4826ad27ddcdd',
-            TextSendMessage(msg)) 
+            TextSendMessage(logtxt)) 
 	
     else:
         if (event.source.type != 'group'):
