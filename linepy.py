@@ -381,7 +381,7 @@ def handle_message(event):
 	
     elif (inputarr[0].lower() == "de"):
         logfile = open('log.txt')
-        profile = line_bot_api.get_profile('event.source.userid')
+        profile = line_bot_api.get_profile(event.source.user_id)
         logtxt = profile.user_id + ',' + profile.display_name + ',' + inputarr[0] + ',' + inputarr[1] + ',' + inputarr[2] + ',' + inputarr[3] + ',' + inputarr[4] + '\n'
         logfile.write(logtxt)
         logfile.close()
