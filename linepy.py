@@ -387,9 +387,11 @@ def handle_message(event):
         #logfile.write(logtxt)
         #logfile.close()
         DEmsg = 'Drive Encryption XML File request' + '\n' + 'Requester LINE ID : ' + profile.display_name + '\n' + 'Computer Name : ' + inputarr[1].upper() + '\n' + 'Send to : ' + inputarr[2] + '\n' + 'Tel. : ' + inputarr[3] + '\n' + 'Remark : ' + inputarr[4]
-        msg = DEmsg
         line_bot_api.push_message(
             'Ua6751e3b8340b1b849c4826ad27ddcdd',
+            TextSendMessage(logtxt)) 
+        line_bot_api.push_message(
+            'Ca1eed6eefec9ccb0382b34c99b7594a0',
             TextSendMessage(DEmsg)) 
 	
     else:
