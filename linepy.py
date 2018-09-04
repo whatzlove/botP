@@ -459,7 +459,7 @@ def handle_message(event):
             event.reply_token,image_message
             )
 	
-    elif (inputc == "ePO deployment"):
+    elif (inputc == "epo deployment"):
 	#or (event.message.text == "Install trend micro"):
         image_message = ImageSendMessage(
             original_content_url='https:// i.imgur.com/GbnUB3W.jpg',
@@ -504,7 +504,7 @@ def handle_message(event):
             profile.user_id,image_message
             )
 	
-    elif (inputc == "EETECH"):
+    elif (inputc == "eetech"):
 	#or (event.message.text == "Install trend micro"):
         image_message = ImageSendMessage(
             original_content_url='https:// i.imgur.com/NAeO8UU.jpg',
