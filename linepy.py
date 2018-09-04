@@ -76,7 +76,7 @@ def handle_message(event):
 	#or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Please type \n "install" \n "uninstall" \n ต้องการทราบสิทธิในการใช้ USB พิมพ์ชื่อผู้ใช้งาน เช่น abc.d หรือ computer name หรือ IP'))
+            TextSendMessage(text='Please type \n "install" \n "uninstall" \n "drive encryption" \n ตรวจสอบสิทธิในการใช้ USB พิมพ์ Username เช่น user.n หรือ Computer Name หรือ IP' ))
 			
     elif (inputc == "install"): 
 	#or (event.message.text == "Install"):
@@ -89,13 +89,47 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='please chose product \n "uninstall trend micro" \n "uninstall symantec" \n "uninstall vse8.8" \n "uninstall ens10"')) 
-			
-    elif (inputc == "install trend micro"):
-	#or (event.message.text == "Install trend micro"):
+	
+    elif (inputc == "drive encryption"):
+		#or (event.message.text == "Uninstall"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='http://www.mediafire.com/file/6ycymsztz9k0l44/Trend_Micro_Server_Protect_Install_Manual.pdf/file')) 
-			
+            TextSendMessage(text='please chose topic you want to know \n "ePO deployment" \n "EETECH" \n "status check"')) 
+
+	
+    elif (inputc == "install trend micro"):
+	#or (event.message.text == "Install trend micro"):
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/gsBuQkD.jpg',
+	    preview_image_url='https://i.imgur.com/gsBuQkD.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/mLMZiO2.jpg',
+	    preview_image_url='https://i.imgur.com/mLMZiO2.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/0fbQ1gs.jpg',
+	    preview_image_url='https://i.imgur.com/0fbQ1gs.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/FnaEGQc.jpg',
+	    preview_image_url='https://i.imgur.com/FnaEGQc.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/JEpJBv4.jpg',
+	    preview_image_url='https://i.imgur.com/JEpJBv4.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+	
     elif (inputc == "uninstall trend micro"):
 	#or (event.message.text == "Uninstall trend micro"):
         image_message = ImageSendMessage(
@@ -245,16 +279,58 @@ def handle_message(event):
             )
     elif (inputc == "install vse8.8"):
 	#or (event.message.text == "Install vse8.8"):
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='http://www.mediafire.com/file/jrbv2bkjf187dbm/McAfee_VirusScan_Enterprise8.8_Install_Manual_for_WinXP.pdf/file'))  
-			
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/7W7wXYh.jpg',
+	    preview_image_url='https://i.imgur.com/7W7wXYh.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+	image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/pItv5hT.jpg',
+	    preview_image_url='https://i.imgur.com/pItv5hT.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/bOvGauX.jpg',
+	    preview_image_url='https://i.imgur.com/bOvGauX.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/2vRP4pC.jpg',
+	    preview_image_url='https://i.imgur.com/2vRP4pC.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/rnrQT9m.jpg',
+	    preview_image_url='https://i.imgur.com/rnrQT9m.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+	
     elif (inputc == "uninstall vse8.8"):
 	#or (event.message.text == "Uninstall vse8.8"):
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='http://www.mediafire.com/file/s6ha4ovai2vvscx/McAfee_VirusScan_Enterprise8.8_Uninstall_Manual_for_WinXP.pdf/file')) 
-			
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/qhguwnM.jpg',
+	    preview_image_url='https://i.imgur.com/qhguwnM.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/pxX2HVk.jpg',
+	    preview_image_url='https://i.imgur.com/pxX2HVk.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/FYjOMwS.jpg',
+	    preview_image_url='https://i.imgur.com/FYjOMwS.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+	
     elif (inputc == "install ens10"): 
 	#or (event.message.text == "Install ens10"):
         image_message = ImageSendMessage(
@@ -381,7 +457,136 @@ def handle_message(event):
 	    preview_image_url='https://i.imgur.com/hjKN0at.jpg')
         line_bot_api.reply_message(
             event.reply_token,image_message
-            ) 
+            )
+	
+    elif (inputc == "ePO deployment"):
+	#or (event.message.text == "Install trend micro"):
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/GbnUB3W.jpg',
+	    preview_image_url='https:// i.imgur.com/GbnUB3W.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/sdTgT3g.jpg',
+	    preview_image_url='https:// i.imgur.com/sdTgT3g.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/TvK4Stu.jpg',
+	    preview_image_url='https:// i.imgur.com/TvK4Stu.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/R4AqyCM.jpg',
+	    preview_image_url='https:// i.imgur.com/R4AqyCM.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/QqVO8Kh.jpg',
+	    preview_image_url='https:// i.imgur.com/QqVO8Kh.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/x0614Mw.jpg',
+	    preview_image_url='https:// i.imgur.com/x0614Mw.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/k7EaEFu.jpg',
+	    preview_image_url='https:// i.imgur.com/k7EaEFu.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+	
+    elif (inputc == "EETECH"):
+	#or (event.message.text == "Install trend micro"):
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/NAeO8UU.jpg',
+	    preview_image_url='https:// i.imgur.com/NAeO8UU.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/k4h32EP.jpg',
+	    preview_image_url='https:// i.imgur.com/k4h32EP.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/nKS8WOG.jpg',
+	    preview_image_url='https:// i.imgur.com/nKS8WOG.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/maupzEV.jpg',
+	    preview_image_url='https:// i.imgur.com/maupzEV.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/lowujsB.jpg',
+	    preview_image_url='https:// i.imgur.com/lowujsB.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/8yVWdSa.jpg',
+	    preview_image_url='https:// i.imgur.com/8yVWdSa.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/lWhXB0A.jpg',
+	    preview_image_url='https:// i.imgur.com/lWhXB0A.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/uIlx1CY.jpg',
+	    preview_image_url='https:// i.imgur.com/uIlx1CY.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/nFaq6Ta.jpg',
+	    preview_image_url='https:// i.imgur.com/nFaq6Ta.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/A9INtLC.jpg',
+	    preview_image_url='https:// i.imgur.com/A9INtLC.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+	
+    elif (inputc == "status check"):
+	#or (event.message.text == "Install trend micro"):
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/NlmFZIj.jpg',
+	    preview_image_url='https:// i.imgur.com/NlmFZIj.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/Yua4xrb.jpg',
+	    preview_image_url='https:// i.imgur.com/Yua4xrb.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https:// i.imgur.com/KD2QSRp.jpg',
+	    preview_image_url='https:// i.imgur.com/KD2QSRp.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
 	
     elif (inputc == "groupid"):
         line_bot_api.reply_message(
