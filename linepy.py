@@ -98,10 +98,19 @@ def handle_message(event):
 			
     elif (inputc == "uninstall trend micro"):
 	#or (event.message.text == "Uninstall trend micro"):
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text='http://www.mediafire.com/file/b8j1oegd6e25b73/Trend_Micro_Server_Protect_Uninstall_Manual.pdf/file')) 
-			
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/wwnJ397.jpg',
+	    preview_image_url='https://i.imgur.com/wwnJ397.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+        image_message = ImageSendMessage(
+            original_content_url='https://i.imgur.com/OR62GHF.jpg',
+	    preview_image_url='https://i.imgur.com/OR62GHF.jpg')
+        line_bot_api.push_message(
+            profile.user_id,image_message
+            )
+	
     elif (inputc == "install symantec"): 
 	#or (event.message.text == "Install symantec"):
       #  profile = line_bot_api.get_profile(event.source.user_id)
