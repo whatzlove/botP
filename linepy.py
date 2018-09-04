@@ -41,6 +41,9 @@ def handle_message(event):
     inputc = event.message.text.lower()
     inputarr = textinput.split(' ')
 
+    rich_menu = line_bot_api.get_rich_menu(rich_menu_id)
+    print(rich_menu.rich_menu_id)
+
     rich_menu_to_create = RichMenu(
     size=RichMenuSize(width=2500, height=843),
     selected=False,
