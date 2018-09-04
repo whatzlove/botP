@@ -462,44 +462,44 @@ def handle_message(event):
     elif (inputc == "epo deployment"):
 	#or (event.message.text == "Install trend micro"):
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/GbnUB3W.jpg',
-	    preview_image_url='https:// i.imgur.com/GbnUB3W.jpg')
+            original_content_url='https://i.imgur.com/GbnUB3W.jpg',
+	    preview_image_url='https://i.imgur.com/GbnUB3W.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/sdTgT3g.jpg',
-	    preview_image_url='https:// i.imgur.com/sdTgT3g.jpg')
+            original_content_url='https://i.imgur.com/sdTgT3g.jpg',
+	    preview_image_url='https://i.imgur.com/sdTgT3g.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/TvK4Stu.jpg',
-	    preview_image_url='https:// i.imgur.com/TvK4Stu.jpg')
+            original_content_url='https://i.imgur.com/TvK4Stu.jpg',
+	    preview_image_url='https://i.imgur.com/TvK4Stu.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/R4AqyCM.jpg',
-	    preview_image_url='https:// i.imgur.com/R4AqyCM.jpg')
+            original_content_url='https://i.imgur.com/R4AqyCM.jpg',
+	    preview_image_url='https://i.imgur.com/R4AqyCM.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/QqVO8Kh.jpg',
-	    preview_image_url='https:// i.imgur.com/QqVO8Kh.jpg')
+            original_content_url='https://i.imgur.com/QqVO8Kh.jpg',
+	    preview_image_url='https://i.imgur.com/QqVO8Kh.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/x0614Mw.jpg',
-	    preview_image_url='https:// i.imgur.com/x0614Mw.jpg')
+            original_content_url='https://i.imgur.com/x0614Mw.jpg',
+	    preview_image_url='https://i.imgur.com/x0614Mw.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/k7EaEFu.jpg',
-	    preview_image_url='https:// i.imgur.com/k7EaEFu.jpg')
+            original_content_url='https://i.imgur.com/k7EaEFu.jpg',
+	    preview_image_url='https://i.imgur.com/k7EaEFu.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
@@ -507,62 +507,62 @@ def handle_message(event):
     elif (inputc == "eetech"):
 	#or (event.message.text == "Install trend micro"):
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/NAeO8UU.jpg',
-	    preview_image_url='https:// i.imgur.com/NAeO8UU.jpg')
+            original_content_url='https://i.imgur.com/NAeO8UU.jpg',
+	    preview_image_url='https://i.imgur.com/NAeO8UU.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/k4h32EP.jpg',
-	    preview_image_url='https:// i.imgur.com/k4h32EP.jpg')
+            original_content_url='https://i.imgur.com/k4h32EP.jpg',
+	    preview_image_url='https://i.imgur.com/k4h32EP.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/nKS8WOG.jpg',
-	    preview_image_url='https:// i.imgur.com/nKS8WOG.jpg')
+            original_content_url='https://i.imgur.com/nKS8WOG.jpg',
+	    preview_image_url='https://i.imgur.com/nKS8WOG.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/maupzEV.jpg',
-	    preview_image_url='https:// i.imgur.com/maupzEV.jpg')
+            original_content_url='https://i.imgur.com/maupzEV.jpg',
+	    preview_image_url='https://i.imgur.com/maupzEV.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/lowujsB.jpg',
-	    preview_image_url='https:// i.imgur.com/lowujsB.jpg')
+            original_content_url='https://i.imgur.com/lowujsB.jpg',
+	    preview_image_url='https://i.imgur.com/lowujsB.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/8yVWdSa.jpg',
-	    preview_image_url='https:// i.imgur.com/8yVWdSa.jpg')
+            original_content_url='https://i.imgur.com/8yVWdSa.jpg',
+	    preview_image_url='https://i.imgur.com/8yVWdSa.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/lWhXB0A.jpg',
-	    preview_image_url='https:// i.imgur.com/lWhXB0A.jpg')
+            original_content_url='https://i.imgur.com/lWhXB0A.jpg',
+	    preview_image_url='https://i.imgur.com/lWhXB0A.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/uIlx1CY.jpg',
-	    preview_image_url='https:// i.imgur.com/uIlx1CY.jpg')
+            original_content_url='https://i.imgur.com/uIlx1CY.jpg',
+	    preview_image_url='https://i.imgur.com/uIlx1CY.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/nFaq6Ta.jpg',
-	    preview_image_url='https:// i.imgur.com/nFaq6Ta.jpg')
+            original_content_url='https://i.imgur.com/nFaq6Ta.jpg',
+	    preview_image_url='https://i.imgur.com/nFaq6Ta.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/A9INtLC.jpg',
-	    preview_image_url='https:// i.imgur.com/A9INtLC.jpg')
+            original_content_url='https://i.imgur.com/A9INtLC.jpg',
+	    preview_image_url='https://i.imgur.com/A9INtLC.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
@@ -570,20 +570,20 @@ def handle_message(event):
     elif (inputc == "status check"):
 	#or (event.message.text == "Install trend micro"):
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/NlmFZIj.jpg',
-	    preview_image_url='https:// i.imgur.com/NlmFZIj.jpg')
+            original_content_url='https://i.imgur.com/NlmFZIj.jpg',
+	    preview_image_url='https://i.imgur.com/NlmFZIj.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/Yua4xrb.jpg',
-	    preview_image_url='https:// i.imgur.com/Yua4xrb.jpg')
+            original_content_url='https://i.imgur.com/Yua4xrb.jpg',
+	    preview_image_url='https://i.imgur.com/Yua4xrb.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
         image_message = ImageSendMessage(
-            original_content_url='https:// i.imgur.com/KD2QSRp.jpg',
-	    preview_image_url='https:// i.imgur.com/KD2QSRp.jpg')
+            original_content_url='https://i.imgur.com/KD2QSRp.jpg',
+	    preview_image_url='https://i.imgur.com/KD2QSRp.jpg')
         line_bot_api.push_message(
             profile.user_id,image_message
             )
