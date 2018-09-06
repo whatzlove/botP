@@ -65,7 +65,8 @@ def handle_message(event):
      #   name = word.split('	')
       #  LastArray =  len(name) - 1
     while j <= LastArray:
-        if inputarr[0].lower() == name[j].lower():
+      #  if inputarr[0].lower() == name[j].lower():
+        if inputarr[0].lower() == line[j].lower():
             j = LastArray
             stop = 1
             result = 1
