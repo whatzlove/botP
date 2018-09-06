@@ -58,10 +58,12 @@ def handle_message(event):
 	   
     stop = 0
     j = 0
-    file = open('ListUseUSB.txt')
-    for word in file:
-        name = word.split('	')
-        LastArray =  len(name) - 1
+    #file = open('ListUseUSB.txt')
+    line = open('ListUseUSB.txt').read().split('\n')
+    LastArray =  len(line) - 1
+    #for word in file:
+     #   name = word.split('	')
+      #  LastArray =  len(name) - 1
     while j <= LastArray:
         if inputarr[0].lower() == name[j].lower():
             j = LastArray
