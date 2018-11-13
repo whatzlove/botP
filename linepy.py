@@ -100,17 +100,17 @@ def handle_message(event):
     if (result == 1) and (result2 == 1):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Use USB and CD-ROM \n MDM Active'))		
+            TextSendMessage(text='Use USB and CD-ROM \n MDM Authorize'))		
 			
     elif (result == 0) and (result2 == 1):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='ไม่มีสิทธิใช้งาน USB \n MDM Active'))	
+            TextSendMessage(text='ไม่มีสิทธิใช้งาน USB \n MDM Authorize'))	
 			
     elif (result == 1) and (result2 == 0):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Use USB and CD-ROM \n MDM Inactive'))	
+            TextSendMessage(text='Use USB and CD-ROM \n MDM Unauthorize'))	
 			
  #   if (inputarr[0] == "usb") or (inputarr[0] == "Usb"):
 #        line_bot_api.reply_message(
@@ -666,7 +666,7 @@ def handle_message(event):
         if (event.source.type != 'group'):
             line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB และ MDM หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
+                TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB และ MDM Unauthorize หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
         else:
             exit()
 			
