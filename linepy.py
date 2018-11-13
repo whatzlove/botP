@@ -100,12 +100,12 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text='Use USB and CD-ROM \n MDM Active'))		
 			
-	elif (result == 0) and (result2 == 1):
+    elif (result == 0) and (result2 == 1):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='ไม่มีสิทธิใช้งาน USB \n MDM Active'))	
 			
-	elif (result == 1) and (result2 == 0):
+    elif (result == 1) and (result2 == 0):
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text='Use USB and CD-ROM \n MDM Inactive'))	
