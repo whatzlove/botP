@@ -40,6 +40,7 @@ def handle_message(event):
     textinput = event.message.text
     inputc = event.message.text.lower()
     inputarr = textinput.split(' ')
+    inputarrt = textinput.split('	')
 
   #  rich_menu = line_bot_api.get_rich_menu(rich_menu_id)
  #   print(rich_menu.rich_menu_id)
@@ -87,7 +88,7 @@ def handle_message(event):
     LastArray =  len(line2) - 1
     while k <= LastArray:
   #      if (MAMName.lower() == line2[k].lower()) or (inputarr[0] == line2[k].lower()) :
-        if inputc == line2[k].lower():
+        if inputarrt[0] == line2[k].lower():
             k = LastArray
             stop = 1
             result2 = 1
