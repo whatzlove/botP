@@ -79,8 +79,7 @@ def handle_message(event):
   #      line_bot_api.reply_message(
    #         event.reply_token,
     #        TextSendMessage(text='Use USB and CD-ROM'))
-	
-	stop2 = 0
+    stop2 = 0
     k = 0
 	MDMName = inputarr[0] + ' ' + inputarr[1]
 	
