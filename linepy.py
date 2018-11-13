@@ -81,12 +81,13 @@ def handle_message(event):
     #        TextSendMessage(text='Use USB and CD-ROM'))
     stop2 = 0
     k = 0
-    MDMName = inputarr[0] + ' ' + inputarr[1]
+ #   MDMName = inputarr[0] + ' ' + inputarr[1]
 	
-    line = open('MDMList.txt').read().split('\n')
-    LastArray =  len(line) - 1
+    line2 = open('MDMList.txt').read().split('\n')
+    LastArray =  len(line2) - 1
     while k <= LastArray:
-        if (MAMName.lower() == line[k].lower()) or (inputarr[0] == line[k].lower()) :
+  #      if (MAMName.lower() == line2[k].lower()) or (inputarr[0] == line2[k].lower()) :
+        if inputc == line2[k].lower():
             k = LastArray
             stop = 1
             result2 = 1
