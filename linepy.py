@@ -30,7 +30,6 @@ def webhook():
 
     return 'OK'
     
-
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     profile = line_bot_api.get_profile(event.source.user_id)
