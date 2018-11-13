@@ -100,17 +100,17 @@ def handle_message(event):
     if (result == 1) and (result2 == 1):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Use USB and CD-ROM \n MDM Authorize'))		
+            TextSendMessage(text='มีสิทธิในการใช้งาน USB และ CD-ROM \n มีสิทธิในการใช้งาน MDM '))		
 			
     elif (result == 0) and (result2 == 1):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='ไม่มีสิทธิใช้งาน USB \n MDM Authorize'))	
+            TextSendMessage(text='ไม่มีสิทธิใช้งาน USB \n มีสิทธิในการใช้งาน MDM'))	
 			
     elif (result == 1) and (result2 == 0):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Use USB and CD-ROM \n MDM Unauthorize'))	
+            TextSendMessage(text='มีสิทธิในการใช้งาน USB และ CD-ROM \n ไม่มีสิทธิในการใช้งาน MDM'))	
 			
  #   if (inputarr[0] == "usb") or (inputarr[0] == "Usb"):
 #        line_bot_api.reply_message(
