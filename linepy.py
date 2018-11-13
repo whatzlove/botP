@@ -75,10 +75,41 @@ def handle_message(event):
     if stop == 0 :
         result = 0
   #  return result
-    if result == 1:
+ #   if result == 1:
+  #      line_bot_api.reply_message(
+   #         event.reply_token,
+    #        TextSendMessage(text='Use USB and CD-ROM'))
+	
+	stop2 = 0
+    k = 0
+	MDMName = inputarr[0] + ' ' + inputarr[1]
+	
+    line = open('MDMList.txt').read().split('\n')
+    LastArray =  len(line) - 1
+    while k <= LastArray:
+        if (MAMName.lower() == line[k].lower()) or (inputarr[0] == line[k].lower()) :
+            k = LastArray
+            stop = 1
+            result2 = 1
+        else:
+            k += 1
+    if stop2 == 0 :
+        result2 = 0
+
+    if (result == 1) and (result2 == 1):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Use USB and CD-ROM'))
+            TextSendMessage(text='Use USB and CD-ROM \n MDM Active'))		
+			
+	elif (result == 0) and (result2 == 1):
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text='ไม่มีสิทธิใช้งาน USB \n MDM Active'))	
+			
+	elif (result == 1) and (result2 == 0):
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text='Use USB and CD-ROM \n MDM Inactive'))	
 			
  #   if (inputarr[0] == "usb") or (inputarr[0] == "Usb"):
 #        line_bot_api.reply_message(
@@ -634,7 +665,7 @@ def handle_message(event):
         if (event.source.type != 'group'):
             line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
+                TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB และ MDM หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
         else:
             exit()
 			
