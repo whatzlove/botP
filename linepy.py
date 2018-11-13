@@ -666,7 +666,7 @@ def handle_message(event):
         if (event.source.type != 'group'):
             line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB และ MDM Unauthorize หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
+                TextSendMessage(text='ไม่มีสิทธิในการใช้งาน USB และ MDM หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
         else:
             exit()
 			
