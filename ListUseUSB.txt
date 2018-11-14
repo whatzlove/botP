@@ -1,4 +1,4 @@
-phataravee.k
+ï»¿phataravee.k
 burassakorn.c
 prasopsri.k
 sophon.c
@@ -406,11 +406,11 @@ suwimol.m
 kittipong.sa
 Anan.m
 Sudarat.thi
- parlutha.m
+Â parlutha.m
 atasit.u
- Deit-Rit.E
- pisanu.t
- tawatchai.si
+Â Deit-Rit.E
+Â pisanu.t
+Â tawatchai.si
 tairong.k
 nareerut.p
 pattaree.t
@@ -5809,7 +5809,7 @@ A04036HD
 A04012QN
 A04008EZ
 A04035KX
-Å04001zv
+Ã…04001zv
 A04039NV
 A04012RR
 A04013RP
@@ -8849,7 +8849,7 @@ K17PE5106WK
 A05103PT
 K18HM510875
 K17HW510827
-K18BOTCDD3000 
+K18BOTCDD3000Â 
 A040605G
 A01110DR
 A04036EG
