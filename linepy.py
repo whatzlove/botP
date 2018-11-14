@@ -129,7 +129,7 @@ def handle_message(event):
 	#or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Please type \n "install" \n "uninstall" \n "drive encryption" \n ตรวจสอบสิทธิการใช้ USB และ MDM พิมพ์ Username เช่น user.n หรือ Computer Name หรือ IP' ))
+            TextSendMessage(text='Please type \n "install" \n "uninstall" \n "drive encryption" \n ตรวจสอบสิทธิการใช้ USB และ MDM พิมพ์ Username เช่น user.n หรือ Computer Name หรือ IP Address' ))
 			
     elif (inputc == "install"): 
 	#or (event.message.text == "Install"):
