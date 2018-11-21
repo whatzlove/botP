@@ -99,17 +99,17 @@ def handle_message(event):
     if (result == 1) and (result2 == 1):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='มีสิทธิการใช้งาน USB และ CD-ROM \n มีสิทธิการใช้งาน MDM '))		
+            TextSendMessage(text='มีสิทธิใช้งาน USB และ CD-ROM \n มีสิทธิใช้งาน MDM '))		
 			
     elif (result == 0) and (result2 == 1):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='ไม่มีสิทธิใช้งาน USB \n มีสิทธิการใช้งาน MDM'))	
+            TextSendMessage(text='ไม่มีสิทธิใช้งาน USB \n มีสิทธิใช้งาน MDM'))	
 			
     elif (result == 1) and (result2 == 0):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='มีสิทธิการใช้งาน USB และ CD-ROM \n ไม่มีสิทธิการใช้งาน MDM'))	
+            TextSendMessage(text='มีสิทธิใช้งาน USB และ CD-ROM \n ไม่มีสิทธิใช้งาน MDM'))	
 			
  #   if (inputarr[0] == "usb") or (inputarr[0] == "Usb"):
 #        line_bot_api.reply_message(
@@ -129,7 +129,7 @@ def handle_message(event):
 	#or (event.message.text == "Menu"):
         line_bot_api.reply_message(
             event.reply_token,
-            TextSendMessage(text='Please type \n "install" \n "uninstall" \n "drive encryption" \n ตรวจสอบสิทธิการใช้ USB และ MDM พิมพ์ Username เช่น user.n หรือ Computer Name หรือ IP Address' ))
+            TextSendMessage(text='Please type \n "install" \n "uninstall" \n "drive encryption" \n ตรวจสอบสิทธิใช้งาน USB และ MDM พิมพ์ Username เช่น user.n หรือ Computer Name หรือ IP Address' ))
 			
     elif (inputc == "install"): 
 	#or (event.message.text == "Install"):
@@ -665,7 +665,7 @@ def handle_message(event):
         if (event.source.type != 'group'):
             line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='ไม่มีสิทธิการใช้งาน USB และ MDM หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
+                TextSendMessage(text='ไม่มีสิทธิใช้งาน USB และ MDM หรือถ้าไม่ใช่สิ่งที่ค้นหา กรุณาพิมพ์ "menu"'))   
         else:
             exit()
 			
